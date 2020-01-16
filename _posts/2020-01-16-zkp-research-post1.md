@@ -56,3 +56,9 @@ Sonic은 보편적이고, 업데이트 가능하며 작은 글로벌 파라미�
 Bulletproofs([Bootle 외 연구진들](https://eprint.iacr.org/2016/263)에 의해 도입되고 [Bünz 외 연구진들](https://eprint.iacr.org/2017/1066)에 의해 개선됨)에 비해 Sonic은 증명 크기가 더 작고 검증 연산도 훨씬 더 작다. Bulletproof 검증은 기초 용도의 크기에 따라 크기가 달라지는 계산을 요구한다. 반면에 Sonic은 어떤 용도에 대해서도 일정한 크기의 검증기를 가지고 있다. Bulltetproofs는 완전히 신뢰할 수 있는 구조인 반면 Sonic은 덜 신뢰적인 구조이다. 또한, Bulletproofs은 Sonic보다 더 표준적인 가정에 근거하여 보안을 강화한다. 전체적으로 Bulletproofs는 작은 용도에서 좋고 Sonic은 큰 용도에서 더 좋다.
 
 Sonic은 zk-STARKs에 서로 다른 용도에 사용된다. STARKs는 postquantum 보안을 가능하게 하고 완전히 신뢰할 수 있는 구조지만 오버헤드가 높다. 크기가 작은 용도의 경우에도 현재 STARK 증명 크기는 최소 40KB이다. 이러한 특성은 STARK가 일회성 비용으로 실행되는 용도에 더 적합하며 동일한 프로그램에 대한 복수의 증명서가 실행, 저장 및 검증되는 용도에는 덜 적합하다.
+
+# 기술
+
+Sonic은 Bulletproofs와 동일한 기술을 사용하여 문제점을 설명한다. 페어링 기반 그룹 위에 구축되어 있으며 [Kate 외 연구진들](https://www.iacr.org/archive/asiacrypt2010/6477178/6477178.pdf)에 의한 일정한 크기의 다항식 공식을 많이 사용한다. 증명자와 검증자 간의 두 번의 상호 작용을 가정한 다음 random oracle model에서 비동기식으로 만든다.
+
+Sonic은 두 가지 연산 모드가 있는데 "helper"모드와 "unhelper"모드가 있다. Helper 모드는 간단하고 더욱 효율적이지만 여러 증명들을 종합하는 제 3자의 존재를 가정한다. Unhelper 모드는 일괄 처리 또는 집계가 더 비싸다고 가정한다.(256-bit 그룹에 대한 예상 증명 크기는 1KB임)
