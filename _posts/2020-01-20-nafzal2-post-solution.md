@@ -260,6 +260,64 @@ int main(int argc, char* argv[]) {
 
 (2020-01-20)
 
+처리 과정에 대해서 부분적으로 고쳤다. 조금 더 코드적인 처리 사고를 가져야 겠다.
+>1. 수를 증가한다.
+>2. 수가 최댓값보다 작거나 같을 때까지 반복한다.
+>   2.1. 3의 배수를 판별한다.
+>   2.1.1. 3의 배수가 아니면 5의 배수를 판별한다.
+>   2.1.2. 5의 배수가 아니면 합을 구한다.
+>3. 합을 출력한다.
+>4. 끝낸다.
+
+코드는 아래와 같이 작성하였다.
+
+{% highlight c %}
+//5_exclusionAdder.c
+/**************************************************************************
+ * 파일   명칭 : 5_exclusionAdder.c
+ * 기       능 : 1에서 100까지 수 중에서 3의 배수와 5의 배수를 제외한 
+ *               합을 계산한다.
+ * 함수   명칭 : main
+ * 출       력 : 총합
+ * 입       력 : 없음
+ * 작   성  자 : 채 종 홍
+ * 작성   일자 : 2020/01/20
+**************************************************************************/
+#include <stdio.h>
+
+#define MAX 10
+#define DIVIDER3 3
+#define DIVIDER5 5
+
+int main(int argc, char* argv[]) {
+
+	unsigned long sum = 0;
+	unsigned long remainder = 0;
+	unsigned long number = 1;
+    
+	//2. 수가 최댓값보다 작거나 같을 때9까지 반복한다.
+	while(number <= MAX){
+		//2.1. 3의 배수를 판별한다.
+		remainder = number%DIVIDER3;
+		if(remainder != 0){
+			//2.1.1. 3의 배수가 아니면 5의 배수를 판별한다.
+			remainder=number%DIVIDER5;
+			if(remainder != 0){
+				//2.1.2. 5의 배수가 아니면 합을 더한다.
+				sum+=number;
+			}
+		}
+		printf("sum : %d\n",sum);
+		//1.수를 증가한다.
+		number++;
+	}
+	//3. 합을 출력한다.
+	printf("last sum : %d\n",sum);
+	//4. 끝낸다.
+	return 0;
+}
+{% endhighlight %}
+
 ![9장_내부 설계(모듈 기술서) 양식 문제 6](https://user-images.githubusercontent.com/25213941/72692593-1309b280-3b70-11ea-9080-624d99169201.png)
 ![9장_내부 설계(모듈 기술서) 양식 문제 7](https://user-images.githubusercontent.com/25213941/72692594-13a24900-3b70-11ea-9b53-26b689e92426.png)
 
