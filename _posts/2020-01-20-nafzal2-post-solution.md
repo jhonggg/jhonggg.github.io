@@ -101,8 +101,7 @@ int main(int argc, char* argv[]) {
 
 #### 모듈 기술서 변경 후
 
-![p482-c9-q3-v2](https://user-images.githubusercontent.com/25213941/72702538-62fb7000-3b96-11ea-98be-0463d7728a07.png)
-
+![p482-c9-q2_v2](https://user-images.githubusercontent.com/25213941/72702537-62fb7000-3b96-11ea-9ba1-e4c00cd0306e.png)
 
 코드는 아래와 같이 작성하였다.
 
@@ -159,7 +158,7 @@ int main(int argc, char *argv[]){
 
 #### 모듈 기술서 변경 후
 
-![p482-c9-q2_v2](https://user-images.githubusercontent.com/25213941/72702537-62fb7000-3b96-11ea-9ba1-e4c00cd0306e.png)
+![p482-c9-q3-v2](https://user-images.githubusercontent.com/25213941/72702538-62fb7000-3b96-11ea-98be-0463d7728a07.png)
 
 코드는 아래와 같이 작성하였다.
 
