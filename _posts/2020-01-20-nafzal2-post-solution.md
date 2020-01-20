@@ -343,7 +343,7 @@ int main(int argc, char* argv[]) {
 **************************************************************************/
 #include <stdio.h>
 
-#define MAX 5
+#define MAX 100
 #define NUMERATOR 1
 #define DIVIDER 2
 
@@ -372,11 +372,137 @@ int main(int argc, char* argv[]) {
 	//3.합을 출력한다.
 	printf("1-(1/2)+(1/3)-...+(1/%d)-(1/%d) : %f", MAX-1, MAX, sum);
 	//4.끝낸다.
+    return 0;
 }
 {% endhighlight %}
 
+### 문제 7
 
 ![9장_내부 설계(모듈 기술서) 양식 문제 7](https://user-images.githubusercontent.com/25213941/72692594-13a24900-3b70-11ea-9b53-26b689e92426.png)
 
+여기서도 '문제 6'과 동일하게 결과값을 실수로 표현해야했다.(분수니깐??)
+
+코드는 아래와 같이 작성하였다.
+
+{% highlight c %}
+//7_factorialSum.c
+/**************************************************************************
+ * 파일   명칭 : 7_factorialSum.c
+ * 기       능 : 1-(2/3!)+(3/5!)-...-(10/19!)을 계산한다.
+ * 함수   명칭 : main
+ * 출       력 : 총합
+ * 입       력 : 없음
+ * 작   성  자 : 채 종 홍
+ * 작성   일자 : 2020/01/20
+**************************************************************************/
+#include <stdio.h>
+
+#define MAX 10
+#define DIVIDER 2
+
+int main(int argc, char* argv[]) {
+
+	float sum = 0;
+	float fraction = 0;
+	unsigned long numerator = 0;
+	unsigned long number = 1;
+	unsigned long factorial = 1;
+	unsigned long remainder = 0;
+	unsigned long temp = 0;
+
+	//1. 분자를 증가한다.
+	//2. 분자가 MAX보다 작거나 같을 때까지 반복한다.
+	for(numerator=1; numerator<=MAX; numerator++){
+		//2.1.1. 분모를 구한다.
+		number=numerator+temp;
+		while(number > 0){
+			printf("number: %d\n", number);
+			factorial=factorial*number;
+			number--;
+		}		
+		//2.1. 분수 형태를 만든다.
+		fraction=(float)numerator/factorial;
+		//2.2. 분자가 짝수인지 판별한다.
+		remainder=numerator%DIVIDER;
+		if(remainder == 0){
+			//2.2.1. 짝수이면 합을 뺀다.
+			sum-=fraction;
+		}else{
+			//2.2.2. 짝수가 아니면 합을 더한다.
+			sum+=fraction;
+		}
+		temp=numerator;
+		factorial=1;
+	}
+	//3. 합을 출력한다.
+	printf("factorialSum : %f\n", sum);
+	//4. 끝낸다.
+	return 0;
+}
+{% endhighlight c %}
+
+### 문제 8
+
 ![9장_내부 설계(모듈 기술서) 양식 문제 8](https://user-images.githubusercontent.com/25213941/72692592-1309b280-3b70-11ea-9ee1-b641f63f1285.png)
 
+(2020-01-21)
+
+하다보니깐 벌써 새벽 2시가 넘어갔다. 문제 8번을 하면서 이상하게 음수값이 출력이 된다. 내가 자체적으로 생각한 문제는 이러했다.
+
+1. 선언한 자료형 범위를 넘겨버려서?
+2. 피보나치 수열을 이상하게 만듦
+
+1번, 2번 둘 다 생각해서 수정하고 다시 했어도 결과는 똑같았다. 마지막 방법인 인터넷에서 다른 분들이 짠 코드를 실행해보는 것이였는데......
+
+![p482-c9-q8-error](https://user-images.githubusercontent.com/25213941/72745633-81dc1f80-3bf3-11ea-9379-b2a0924824ff.PNG)
+
+**-298632863**이라는 값이 동일하게 출력되었다. 하지만 이상했던게 ![여기](https://ko.numberempire.com/fibonaccinumbers.php)에서 만들어 놓은 피보나치 수열을 보면 내가 원하는 값이 나온다는 걸 확인할 수 있었다. 
+
+코드는 아래와 같이 작성하였다.(자료형값이 달라졌다.)
+
+{% highlight c %}
+//8_fibonacci.c
+/**************************************************************************
+ * 파일   명칭 : 8_fibonacci.c
+ * 기       능 : 피보나치 수열의 50번째 값을 출력
+ * 함수   명칭 : main
+ * 출       력 : 50번째값
+ * 입       력 : 없음
+ * 작   성  자 : 채 종 홍
+ * 작성   일자 : 2020/01/21
+**************************************************************************/
+#include <stdio.h>
+
+#define MAX 50
+
+int main(int argc, char* argv[]) {
+
+	int iteration = 0;
+	int last = 0;
+	int temp = 0;
+	int longLast = 0;
+	//1. 숫자를 증가한다.
+	//2. 숫자가 MAX보다 작거나 같으면 종료한다.
+	for(iteration=0; iteration<=MAX; iteration++){
+		//2.1. 피보나치 수열을 수행한다.
+		if(iteration < 2){
+			temp=last;
+			last+=iteration;
+		}else{
+			longLast=last+temp;
+			temp=last;
+			last=longLast;
+		}
+	}
+	//3. 합을 출력한다.
+	printf("fibonacci result : %d\n", last);
+	//4. 끝낸다.
+	return 0;
+}
+{% endhighlight c %}
+
+## 2권을 마무리하면서...
+
+뭐...마무리가 아닐 것이다. 이제 3권을 하면서 해야되는 것은 위의 문제들에 대한 최적화가 아닐까 싶다. 보기 좋게 변수를 고쳐본다랄지 좀 더 간결하게 혹은 효율적으로 해본다랄지 등... 생각을 해볼 부분이 많다.
+
+제대로 하고 있는지는 모르겠지만 그래도 이렇게 블로그에 기록도 하고 가이드가 되는 책도 있으니 뭔가를 한다는 기분은 확실히 있는거 같다.
