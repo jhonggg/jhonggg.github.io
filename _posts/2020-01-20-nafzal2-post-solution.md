@@ -40,6 +40,13 @@ image:
 ![9장_내부 설계(모듈 기술서) 문제 1](https://user-images.githubusercontent.com/25213941/72692518-cd4cea00-3b6f-11ea-8866-8eb0a8a40cb7.png)
 
 (2020-01-20)
+
+이전에 올린 모듈 기술서가 디버깅해본 결과 잘못 작성되었다. 홀수를 판단하는 분기점에서 짝수이면 합을 더하기로 되있다..;;
+
+#### 모듈 기술서 변경 후
+
+![p482-c9-q1-v2](https://user-images.githubusercontent.com/25213941/72702539-63940680-3b96-11ea-9d5f-099446f0a282.png)
+
 코드는 아래와 같이 작성하였다.
 
 {% highlight c %}
@@ -89,11 +96,112 @@ int main(int argc, char* argv[]) {
 ![9장_내부 설계(모듈 기술서) 문제 2](https://user-images.githubusercontent.com/25213941/72692544-d938ac00-3b6f-11ea-9140-a72c5a1a5d4e.png)
 
 (2020-01-20)
+
+'1부터 100까지의 수 중의 합'이라는 말이 헷갈린다. 저자의 이런 말이 들어간 문제는 값을 입력받아 처리하는 문제가 있었기 때문이다. 그래서 위의 그림 또한 변경이 되어야한다.
+
+#### 모듈 기술서 변경 후
+
+![p482-c9-q3-v2](https://user-images.githubusercontent.com/25213941/72702538-62fb7000-3b96-11ea-98be-0463d7728a07.png)
+
+
 코드는 아래와 같이 작성하였다.
 
+{% highlight c %}
+//2_oddEvenAdder.c
+/**************************************************************************
+ * 파일   명칭 : 2_oddEvenAdder.c
+ * 기       능 : 1부터 100까지의 수 중의 홀수 합과 짝수 합을 구한다.
+ * 함수   명칭 : main
+ * 출       력 : 홀수합, 짝수합
+ * 입       력 : 없음
+ * 작   성  자 : 채 종 홍
+ * 작성   일자 : 2020/01/20
+**************************************************************************/
+#include <stdio.h>
+#define MAX 100
+#define DIVIDER 2
 
+int main(int argc, char *argv[]){
+
+    unsigned long oddSum = 0;
+    unsigned long evenSum = 0;
+    unsigned long number = 1;
+    unsigned long remainder = 0;
+
+    //2. 수가 작거나 같을 때까지 반복한다.
+    while(number <= MAX){
+        //2.1. 수가 홀수인지 짝수인지 판별한다.
+        remainder=number%DIVIDER;
+        if(remainder != 0){
+            //2.1.1. 홀수이면 홀수합을 구한다.
+            oddSum+=number;
+        }else{
+            //2.1.2. 짝수이면 짝수합을 구한다.
+            evenSum+=number;
+        }
+        //1. 수를 증가한다.
+        number++;
+    }
+    //3. 홀수 합과 짝수 합을 출력한다.
+    printf("oddSum : %d, evenSum : %d\n", oddSum, evenSum);
+    //4. 끝낸다.
+    return 0;
+}
+{% endhighlight %}
+
+### 문제 3
 
 ![9장_내부 설계(모듈 기술서) 문제 3](https://user-images.githubusercontent.com/25213941/72692564-f66d7a80-3b6f-11ea-9721-c3af1f2c0342.png)
+
+(2020-01-20)
+
+이중 반복문을 안쓰고 설계를 해보았지만 해결하지 못하였다. 그래서 이중 반복문을 사용하는 것으로 설계를 바꾸었다.
+
+#### 모듈 기술서 변경 후
+
+![p482-c9-q2_v2](https://user-images.githubusercontent.com/25213941/72702537-62fb7000-3b96-11ea-9ba1-e4c00cd0306e.png)
+
+코드는 아래와 같이 작성하였다.
+
+{% highlight c %}
+//3_sequenceAdder.c
+/**************************************************************************
+ * 파일   명칭 : 3_sequenceAdder.c
+ * 기       능 : 1+(1+2)+(1+2+3)+...+(1+2+3+4+...+100)까지의 합을 구한다.
+ * 함수   명칭 : main
+ * 출       력 : 총합
+ * 입       력 : 없음
+ * 작   성  자 : 채 종 홍
+ * 작성   일자 : 2020/01/20
+**************************************************************************/
+#include <stdio.h>
+
+#define MAX 100
+
+int main(int argc, char* argv[]) {
+
+	unsigned long sum = 0;
+	unsigned long temp = 0;
+	unsigned long number = 1;
+
+	//2. 수가 MAX보다 작거나 같을 때까지 반복한다.
+	while (number <= MAX) {
+		//2.2. 이전까지의 합을 구한다.
+		for (temp = 1; temp < number; temp++) {
+			sum += temp;
+		}
+		//2.1. 총합을 구한다.
+		sum += number;
+		//1. 수를 증가한다.
+		number++;
+	}
+	//3. 총합을 출력한다.
+	printf("1부터 %d까지의 순차합 : %d\n", MAX, sum);
+
+	//4. 끝낸다.
+	return 0;
+}
+{% endhighlight %}
 
 ![9장_내부 설계(모듈 기술서) 양식 문제 4](https://user-images.githubusercontent.com/25213941/72692575-01c0a600-3b70-11ea-8d32-022d0c6a8576.png)
 
