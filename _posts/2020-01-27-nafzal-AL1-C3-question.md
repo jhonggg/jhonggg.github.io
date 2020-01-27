@@ -33,3 +33,22 @@ image:
 ## 문제 4
 > 자리수의 합을 구하시오. 수가 입력되면, 수의 각 자리수의 합을 구한다.
 ![C3-questions_4](https://user-images.githubusercontent.com/25213941/73182694-d71cb180-415c-11ea-9a0b-13d3d6478ab0.png)
+
+## 문제 5
+> 7의 개수를 구하시오. 10000까지 수들에게 7이 몇 개인지 세시오.
+(문제 이해가 잘 안되서 나중에 찾아보는걸로...)
+
+![C3-questions_5](https://user-images.githubusercontent.com/25213941/73183278-e3edd500-415d-11ea-958a-06be251a829d.png)
+
+## 문제 6
+> 수를 뒤집어 보시오. 수가 입력되면, 자리수를 뒤집어 보세요.
+
+![C3-questions_6](https://user-images.githubusercontent.com/25213941/73183279-e4866b80-415d-11ea-876c-d3d205b57f1a.png)
+
+## 문제 7
+> 회문수(대칭수)를 찾으시오.
+> 일단 어떤 수를 받아서 그 수를 뒤집은 다음 뒤집어진 수를 원래의 수에 더하는 과정을 뒤집어서 더하기(Reverse And Add)라고 부르자. 그 합이 회문(Palindrome, 앞에서부터 읽으나 뒤에서부터 읽으나 같은 말이 되는 어구)이 아니면 회문이 될때까지 이 과정을 반복하여 회문수(Palindrome Number)를 만드는 알고리듬을 작성하시오. 단, 입력값은 두 자리 수 이상의 양의 정수이며, 만들어진 회문수는 2,294,967,295보다 작은 수로 이루어 지는 것을 조건으로 한다.
+
+![C3-questions_7](https://user-images.githubusercontent.com/25213941/73183280-e4866b80-415d-11ea-8334-3b251d6d495b.png)
+
+
