@@ -51,4 +51,8 @@ image:
 
 ![C3-questions_7](https://user-images.githubusercontent.com/25213941/73183280-e4866b80-415d-11ea-8334-3b251d6d495b.png)
 
+## 문제 8
+> 가장 큰 수를 만드시오.
+> 두 자리 수 이상의 수가 입력될 때 가장 큰 수를 만들어 보자.
 
+![C3-questions_8](https://user-images.githubusercontent.com/25213941/73240943-de3ad280-41e3-11ea-9951-75e7f7a4a379.jpg)
