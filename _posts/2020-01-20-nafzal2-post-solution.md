@@ -89,7 +89,7 @@ int main(int argc, char* argv[]) {
 	return 0;
 }
 
-{% endhighlight c %}
+{% endhighlight %}
 
 ### 문제 2
 
@@ -252,7 +252,7 @@ int main(int argc, char* argv[]) {
     //4. 끝낸다.
 	return 0;
 }
-{% endhighlight }
+{% endhighlight %}
 
 ### 문제 5
 
@@ -439,7 +439,7 @@ int main(int argc, char* argv[]) {
 	//4. 끝낸다.
 	return 0;
 }
-{% endhighlight c %}
+{% endhighlight %}
 
 ### 문제 8
 
@@ -499,7 +499,7 @@ int main(int argc, char* argv[]) {
 	//4. 끝낸다.
 	return 0;
 }
-{% endhighlight c %}
+{% endhighlight %}
 
 ## 2권을 마무리하면서...
 
