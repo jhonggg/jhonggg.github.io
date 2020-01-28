@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "나프잘알고리즘(1권)"
 image:
-  feature: feature_for_nafzal.jpg
+  feature: feature_for_algorithm1.jpg
 ---
 
 # 3장 문제 풀이

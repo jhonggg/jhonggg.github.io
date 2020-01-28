@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "나프잘프로그래밍(2권)"
 image:
-  feature: feature_for_nafzal.jpg
+  feature: feature_for_programming2.jpg
 ---
 
 ## 2권을 보면서 느낀점...일까?
