@@ -54,6 +54,19 @@ image:
 
 ![C4-questions_4](https://user-images.githubusercontent.com/25213941/73254500-e0ac2500-4201-11ea-89b7-1a2e0a74479c.jpg)
 
+(2020-01-29)
+
 ## 문제 6
+> 수를 뒤집는 문제를 분석하시오.
+
+![C4-questions-6](https://user-images.githubusercontent.com/25213941/73331917-b3668200-42a8-11ea-8f64-b9b6d1cbdd98.jpg)
+
 ## 문제 7
+> 회문수를 구하는 문제를 분석하시오.
+
+![C4-questions-7](https://user-images.githubusercontent.com/25213941/73331918-b3668200-42a8-11ea-9537-75e1e17bb692.jpg)
+
 ## 문제 8
+> 큰 수를 만드는 문제를 분석하시오.
+
+![C4-questions-8](https://user-images.githubusercontent.com/25213941/73331919-b3668200-42a8-11ea-9aa6-9f82be5d5e21.jpg)
