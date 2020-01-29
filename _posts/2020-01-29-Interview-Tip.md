@@ -16,8 +16,7 @@ image:
 ## 1. 면접 볼때 제가 떨어트리는 가장 큰 것
 
 1.1. 링크
-
-[OKKY 링크](https://okky.kr/article/672569?note=1890099)
+- [OKKY 링크](https://okky.kr/article/672569?note=1890099)
 
 1.2. 요약
 - 잘 모르는 지식을 아는 척 하는 것
@@ -26,12 +25,11 @@ image:
 ## 2. 면접 팁 
 
 2.1. 링크
-
-[OKKY 링크](https://okky.kr/article/673042)
+- [OKKY 링크](https://okky.kr/article/673042)
 
 2.2. 요약
 - 전공자인데 전산 기초 파트에서 50퍼센트 이상 답변 못하면 공부 안한거니깐 반성하고 공부하면 됩니다.
-[GITHUB 링크](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
+- [GITHUB 링크](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 
 ## 3. 면접왕 이형
 
@@ -52,11 +50,9 @@ image:
 - 두괄식 표현과 수치화된 표현
 - 즉, 아래의 세 가지를 지켜야함
 
-(1) Before, After가 명확해야함
-
-(2) 무에서 유를 만들어낸 것
-
-(3) 숫자가 개선된 것
+  (1) Before, After가 명확해야함
+  (2) 무에서 유를 만들어낸 것
+  (3) 숫자가 개선된 것
 
 #### 인사이트
 - 다른말로 **사업적 통찰**이라고 할 수 있음
