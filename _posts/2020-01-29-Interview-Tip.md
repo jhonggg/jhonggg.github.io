@@ -37,20 +37,17 @@ image:
 
 3.1. 참고했던 링크
 
-(1) [취업필살기:자소서부터 면접까지 한방에 해결하자](https://youtu.be/7NAVa7-dl5Q)
-
-(2) [필살기 Step 1:유사경험](https://youtu.be/5sgcMQselaU)
-
-(3) [필살기 Step 2:성공경험](https://youtu.be/6pEROkZDVWY)
-
-(4) [필사기 Step 3:인사이트](https://youtu.be/kzn0xY7JB8A)
+- [취업필살기:자소서부터 면접까지 한방에 해결하자](https://youtu.be/7NAVa7-dl5Q)
+- [필살기 Step 1:유사경험](https://youtu.be/5sgcMQselaU)
+- [필살기 Step 2:성공경험](https://youtu.be/6pEROkZDVWY)
+- [필사기 Step 3:인사이트](https://youtu.be/kzn0xY7JB8A)
 
 3.2. 요약
 
 - 중요도
 > 성공경험 > 유사경험 > 인사이트
 
-### 성공경험과 유사경험
+#### 성공경험과 유사경험
 - 필살기는 3~5개 정도로 준비
 - 두괄식 표현과 수치화된 표현
 - 즉, 아래의 세 가지를 지켜야함
@@ -61,7 +58,7 @@ image:
 
 (3) 숫자가 개선된 것
 
-### 인사이트
+#### 인사이트
 - 다른말로 **사업적 통찰**이라고 할 수 있음
 - 마치, 음식을 플레이팅하기 위한 접시 및 데코 등이라고 할 수 있음
 - 자신의 성공경험과 유사경험에 조금이라도 일치하는 Grou에 대한 **책, 아티클, 논문**등을 읽고 인용하기 바람
