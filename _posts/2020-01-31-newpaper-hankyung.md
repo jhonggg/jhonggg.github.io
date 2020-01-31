@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "Newspaper"
 image:
-  feature: feature_for_hangkyung_20200131.jpg
+  feature: feature_for_hangkyung_20200131.png
 ---
 
 # 책마을 
