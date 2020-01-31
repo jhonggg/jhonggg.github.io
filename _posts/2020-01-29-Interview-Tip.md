@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Interview Tip List] Tips"
-excerpt: "Interview Tip List"
+title: "[Interview References] Tips"
+excerpt: "Interview References #1"
 modified: 2020-01-29
 tags: ["Interview", "Tip"]
 comments: true
