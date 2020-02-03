@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "Newspaper"
 image:
-  feature: feature_for_newpapaer_20200202.png
+  feature: feature_for_newspapaer_20200203.png
 ---
 # 사회 및 경제
 ## 헤드라인 가져오기
