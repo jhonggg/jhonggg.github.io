@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Newspaper] 2020-01-31 신문 읽기"
-excerpt: "2020-01-31 신문 읽기"
+excerpt: "한경신문 2020-01-31"
 modified: 2020-01-31
 tags: ["Hankyung", "newspaper"]
 comments: true
