@@ -3,7 +3,7 @@ layout: post
 title: "[Newspaper] 2020-02-02 신문 읽기"
 excerpt: "전자신문 2020-02-02"
 modified: 2020-02-02
-tags: [2020-02-02]
+tags: ["2020-02-02"]
 comments: true
 pinned: true
 categories: "Newspaper"

@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "Interview"
 image:
-feature: feature_for_algorithm1.jpg
+  feature: feature_for_algorithm1.jpg
 ---
 
 # 면접 관련
