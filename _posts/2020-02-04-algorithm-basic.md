@@ -45,17 +45,16 @@ int main(int argv, char* argc[]) {
 void Arrage(int(*numbers)) {
 
 	int temp;
-	for (int i = 0; i < MAX - 1; i++) {
-		for (int j = i + 1; j < MAX; j++) {
-			if (numbers[i] > numbers[j]) {
-				SWAP(numbers[i], numbers[j], temp);
-				/*
-				temp = numbers[i];
-				numbers[i] = numbers[j];
-				numbers[j] = temp;
-				*/
+	int index;
+	for (int i = 0; i < MAX; i++) {
+		min = 9999;
+		for (int j = i; j < MAX; j++) {
+			if (min > numbers[j]) {
+				min = numbers[j];
+				index = j;	
 			}
 		}
+		SWAP(numbers[i], numbers[index], temp);
 	}
 }
 
