@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "Newspaper"
 image:
-  feature: feature_for_newspapaer_20200205.png
+  feature:
 ---
 
 # 사회 및 경제
