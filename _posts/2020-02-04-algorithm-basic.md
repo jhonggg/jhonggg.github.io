@@ -8,7 +8,7 @@ comments: true
 pinned: true
 categories: "algorithm"
 image:
-feature: 
+  feature: 
 ---
 
 # 선택정렬(Selection Sort)

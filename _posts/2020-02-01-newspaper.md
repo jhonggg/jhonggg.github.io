@@ -3,13 +3,14 @@ layout: post
 title: "[Newspaper] 2020-02-01 신문 읽기"
 excerpt: "전자신문 2020-02-01"
 modified: 2020-02-01
-tags: ["2020-02-01","newspaper"]
+tags: [2020-02-01]
 comments: true
 pinned: true
 categories: "Newspaper"
 image:
-feature: feature_for_newpapaer_20200201.png
+  feature: feature_for_newpapaer_20200201.png
 ---
+
 # 사회
 ## 헤드라인 가져오기
 - 우한 교민 333명, 2차 입국...기내 2명등 발열자 6명, 뉴시스

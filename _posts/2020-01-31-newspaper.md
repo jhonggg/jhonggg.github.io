@@ -3,13 +3,14 @@ layout: post
 title: "[Newspaper] 2020-01-31 신문 읽기"
 excerpt: "한경신문 2020-01-31"
 modified: 2020-01-31
-tags: ["2020-01-31", "newspaper"]
+tags: [2020-01-31]
 comments: true
 pinned: true
 categories: "Newspaper"
 image:
-feature: feature_for_newpapaer_20200131.png
+  feature: feature_for_newpapaer_20200131.png
 ---
+
 # 책마을 
 ## 아리스토텔레스도 말했다 '워라밸이 곧 행복이라고'
 

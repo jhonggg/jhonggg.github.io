@@ -3,13 +3,14 @@ layout: post
 title: "[Newspaper] 2020-02-02 신문 읽기"
 excerpt: "전자신문 2020-02-02"
 modified: 2020-02-02
-tags: ["2020-02-02","newspaper"]
+tags: [2020-02-02]
 comments: true
 pinned: true
 categories: "Newspaper"
 image:
-feature: feature_for_newpapaer_20200202.png
+  feature: feature_for_newpapaer_20200202.png
 ---
+
 # 사회
 ## 헤드라인 가져오기
 - 신종 코로나 12번째 확진자는 '日서 입국한 중국인', SBS
