@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Interview References] 임원면접/최종면접 조사"
-excerpt: "임원면접/최종면접 조사 #1"
+title: "[Interview References] 기업 분석 방법 조사"
+excerpt: "기업 분석 방법 조사 #1"
 modified: 2020-02-06
 tags: ["Interview", "Tip"]
 comments: true
